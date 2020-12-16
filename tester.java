@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 public class tester{
 
   public static void main(String[] args){
@@ -50,6 +51,29 @@ public class tester{
     nums5[4] = 1;
     Sorts.bubbleSort(nums5);
     System.out.println(Arrays.toString(nums5));
+
+    int[] nums6 = new int[5];
+    Random rng = new Random();
+    for (int i = 0; i < 5; i++){
+      nums6[i] = rng.nextInt() % 1000;
+    }
+    Sorts.bubbleSort(nums6);
+    System.out.println(Arrays.toString(nums6));
+
+    int[]nums8 = new int[5];
+    Sorts.bubbleSort(nums8);
+    System.out.println(Arrays.toString(nums8));
+
+    rng = new Random();
+    int thismightbeamistake = Math.abs(rng.nextInt() % 1000);
+    int[] nums7 = new int[thismightbeamistake];
+    rng = new Random();
+    for (int i = 0; i < thismightbeamistake; i++) {
+      nums7[i] = rng.nextInt() % 1000;
+    }
+    Sorts.bubbleSort(nums7);
+    System.out.println(Arrays.toString(nums7));
+
   }
 
 }
