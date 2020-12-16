@@ -2,23 +2,21 @@ public class Sorts{
 
   public static void bubbleSort(int[] data){
     int temp = 0;
-    boolean swap = false;
+    boolean noswap = true;
     for (int i = 0; i < data.length - 1; i++) {
-
-      if (data[i] > data[i+1]) {
-        swap = true;
-        temp = data[i];
-        data[i] = data[i+1];
-        data[i+1] = temp;
+      for (int j = 0; j < data.length - 1; j++) {
+        if (data[j] > data[j+1]) {
+          noswap = false;
+          temp = data[j];
+          data[j] = data[j+1];
+          data[j+1] = temp;
+        }
       }
-
-      if (swap == false) {
-        i = data.length;
-      }
-      swap = false;
-
+        if (noswap) {
+          i = data.length;
+        }
+        noswap = true;
     }
-
   }
 
 }
