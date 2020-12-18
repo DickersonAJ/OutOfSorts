@@ -74,6 +74,20 @@ public class tester{
     Sorts.bubbleSort(nums7);
     System.out.println(Arrays.toString(nums7));
 
+    System.out.println();
+    System.out.println("selectionSort testing:");
+    rng = new Random();
+    int asdf = Math.abs(rng.nextInt() % 1000);
+    int[] nums9 = new int[asdf];
+    rng = new Random();
+    for (int i = 0; i < asdf; i++) {
+      nums9[i] = rng.nextInt() % 1000;
+    }
+    Sorts.selectionSort(nums9);
+    System.out.println(Arrays.toString(nums9));
+    Sorts.selectionSort(nums9);
+    System.out.println(Arrays.toString(nums9));
+
   }
 
 }
