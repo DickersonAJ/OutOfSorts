@@ -88,6 +88,29 @@ public class tester{
     Sorts.selectionSort(nums9);
     System.out.println(Arrays.toString(nums9));
 
+    System.out.println();
+    System.out.println("insertionSort testing:");
+    rng = new Random();
+    int q = Math.abs(rng.nextInt() % 1000);
+    int[] nums10 = new int[q];
+    rng = new Random();
+    for (int i = 0; i < q; i++) {
+      nums10[i] = rng.nextInt() % 1000;
+    }
+    Sorts.insertionSort(nums10);
+    System.out.println(Arrays.toString(nums10));
+    Sorts.insertionSort(nums10);
+    System.out.println(Arrays.toString(nums10));
+    System.out.println();
+    int[] nums22 = new int[5];
+    nums22[0] = 5;
+    nums22[1] = 4;
+    nums22[2] = 3;
+    nums22[3] = 2;
+    nums22[4] = 1;
+    Sorts.insertionSort(nums22);
+    System.out.println(Arrays.toString(nums22));
+
   }
 
 }

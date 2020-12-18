@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Sorts{
 
   public static void bubbleSort(int[] data){
@@ -40,7 +42,24 @@ public class Sorts{
   }
 
   public static void insertionSort(int[] data){
-
+    int temp = 0;
+    for (int i = 1; i < data.length; i++) {
+      if (data[i] < data[i-1]){
+        temp = data[i];
+        for (int j = i - 1; j >= 0; j--) {
+          if (temp < data[j]) {
+            data[j+1] = data[j];
+            if (j==0){
+              data[0]=temp;
+            }
+          }
+          else{
+            data[j+1] = temp;
+            j=-1;
+          }
+        }
+      }
+    }
   }
 
 }
