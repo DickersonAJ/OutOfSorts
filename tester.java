@@ -101,6 +101,7 @@ public class tester{
     System.out.println(Arrays.toString(nums10));
     Sorts.insertionSort(nums10);
     System.out.println(Arrays.toString(nums10));
+
     System.out.println();
     int[] nums22 = new int[5];
     nums22[0] = 5;
@@ -110,6 +111,48 @@ public class tester{
     nums22[4] = 1;
     Sorts.insertionSort(nums22);
     System.out.println(Arrays.toString(nums22));
+
+    System.out.println();
+    int[] nums2222 = new int[5];
+    /*nums22[0] = 5;
+    nums22[1] = 4;
+    nums22[2] = 3;
+    nums22[3] = 2;
+    nums22[4] = 1;*/
+    Sorts.insertionSort(nums2222);
+    System.out.println(Arrays.toString(nums2222));
+
+    System.out.println();
+    int[] nums222 = new int[5];
+    nums222[0] = 5;
+    nums222[1] = 4;
+    nums222[2] = 3;
+    nums222[3] = 2;
+    nums222[4] = -1;
+    Sorts.selectionSort(nums222);
+    System.out.println(Arrays.toString(nums222));
+
+    System.out.println();
+    int[] nums22322 = new int[5];
+    /*nums222[0] = 5;
+    nums222[1] = 4;
+    nums222[2] = 3;
+    nums222[3] = 2;
+    nums222[4] = 1;*/
+    Sorts.selectionSort(nums22322);
+    System.out.println(Arrays.toString(nums22322));
+
+    System.out.println();
+    int[] numsq = new int[5];
+    numsq[0] = -1;
+    numsq[1] = 2;
+    numsq[2] = 3;
+    numsq[3] = 4;
+    numsq[4] = 5;
+    Sorts.selectionSort(numsq);
+    System.out.println(Arrays.toString(numsq));
+    Sorts.insertionSort(numsq);
+    System.out.println(Arrays.toString(numsq));
 
   }
 
